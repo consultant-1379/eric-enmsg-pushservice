@@ -1,0 +1,24 @@
+- name: gp
+  mountPath: /gp
+- name: data
+  mountPath: /ericsson/tor/data
+- name: mdt
+  mountPath: /etc/opt/ericsson/ERICmodeldeployment
+- name: dumps
+  mountPath: /ericsson/enm/dumps
+- name: norollback
+  mountPath: /ericsson/no_rollback
+- name: pm1
+  mountPath: /ericsson/pmic1
+- name: pm2
+  mountPath: /ericsson/pmic2
+- name: pmlinks
+  mountPath: /ericsson/symvol
+- name: upgind
+  mountPath: /ericsson/configuration_management/UpgradeIndependence
+- name: batch
+  mountPath: /ericsson/batch
+- name: configmgt
+  mountPath: /ericsson/config_mgt
+- name: tls-secret-1
+  mountPath: {{ .Values.service.tlsMountPath }}/tls1

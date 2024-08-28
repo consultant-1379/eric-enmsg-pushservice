@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<applications xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="CertificateRequest.xsd">
+    <application>
+        <truststores>
+            <truststoreonly>
+                <trustprofilename>EPPKI_pushfile_TP</trustprofilename>
+                <truststore>
+                    <base64truststore>
+                        <storealias>ftpesCA</storealias >
+                        <storelocation>/ericsson/ftps/data/certs/rootCaCert.pem</storelocation>
+                        <storepassword></storepassword>
+                    </base64truststore>
+                </truststore>
+            </truststoreonly>
+        </truststores>
+        <crlupdatemode>CrlNotManaged</crlupdatemode>
+    </application>
+    <user>
+        <!-- keep in the same line to allow grep researches -->
+        <username>jboss_user</username>
+        <usergroup>jboss</usergroup>
+    </user>
+</applications>

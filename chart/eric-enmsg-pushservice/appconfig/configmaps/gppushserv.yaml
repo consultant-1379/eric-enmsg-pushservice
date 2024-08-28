@@ -1,0 +1,41 @@
+global.properties: |
+  COM_INF_LDAP_ADMIN_ACCESS={{ .Values.global.enmProperties.COM_INF_LDAP_ADMIN_ACCESS }}
+  COM_INF_LDAP_ROOT_SUFFIX={{ .Values.global.enmProperties.COM_INF_LDAP_ROOT_SUFFIX }}
+  COM_INF_LDAP_PORT={{ .Values.global.enmProperties.COM_INF_LDAP_PORT }}
+  COM_INF_LDAP_ADMIN_CN={{ .Values.global.enmProperties.COM_INF_LDAP_ADMIN_CN }}
+  DDC_ON_CLOUD=TRUE
+  LDAP_ADMIN_CN={{ .Values.global.enmProperties.LDAP_ADMIN_CN }}
+  LDAP_ADMIN_PASSWORD={{ .Values.global.enmProperties.LDAP_ADMIN_PASSWORD }}
+  pmicNfsShareList={{ .Values.global.enmProperties.pmicNfsShareList }}
+  UI_PRES_SERVER={{ .Values.global.ingress.enmHost }}
+  pmserv={{ .Values.global.enmProperties.pmserv }}
+  PKI_EntityProfile_DN_COUNTRY_NAME=IE
+  PKI_EntityProfile_DN_ORGANIZATION=Ericsson
+  PKI_EntityProfile_DN_ORGANIZATION_UNIT=Athlone
+  certificatesRevListDistributionPointServiceDnsEnable=false
+  certificatesRevListDistributionPointServiceIpv4Enable=false
+  certificatesRevListDistributionPointServiceIpv6Enable=false
+  default_security_admin_password=U2FsdGVkX18E0yK+cT5A6t0/tWFhT2MW48C279fNStA=
+  dps_persistence_provider=neo4j
+  host_internal_bind_nic=eth0
+  host_system_identifier={{ .Values.global.enmProperties.host_system_identifier }}
+  internal_bind_nic=eth0
+  jbossModulesPath=/opt/ericsson/jboss/modules
+  modcluster_listenport=8666
+  neo4j_cluster=causal
+  new_enm_config=True
+  openidm_admin_password=U2FsdGVkX18r9kbj2r7seCPeAI7tNRjeXOgxCuHksgc=
+  pmrouterpolicy=pmrouterpolicy
+  postgresql01_admin_password=U2FsdGVkX19uWU+/kfu7jHGmy9BQdkr1Wz7pcHG56M8=
+  public_bind_nic=eth0
+  web_ports_appServer=8080
+  web_ports_default=443
+  web_ports_securePort=443
+  web_ports_unsecurePort=80
+  web_protocols_default=https
+  web_protocols_secure=https
+  web_protocols_unsecure=http
+  gossiprouters_for_caches=gossiprouter-cache[12002]
+  gossiprouters_for_remoting=gossiprouter-remoting[12001]
+  jgroups_protocol_stack=tcp-gossip
+  vaultserv=vault-service

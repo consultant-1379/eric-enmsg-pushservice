@@ -1,0 +1,33 @@
+- name: gp
+  configMap:
+    name: gppushserv
+- name: data
+  persistentVolumeClaim:
+    claimName: data
+- name: pm1
+  persistentVolumeClaim:
+    claimName: pm1
+- name: pm2
+  persistentVolumeClaim:
+    claimName: pm2
+- name: pmlinks
+  persistentVolumeClaim:
+    claimName: pmlinks
+- name: upgind
+  persistentVolumeClaim:
+    claimName: upgind
+- name: dumps
+  persistentVolumeClaim:
+    claimName: hcdumps
+- name: mdt
+  persistentVolumeClaim:
+    claimName: mdt
+- name: norollback
+  persistentVolumeClaim:
+    claimName: norollback
+- name: batch
+  persistentVolumeClaim:
+    claimName: batch
+- name: configmgt
+  persistentVolumeClaim:
+    claimName: configmgt
